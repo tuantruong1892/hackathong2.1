@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper</title>
+    <style> 
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: rgb(82, 82, 179);
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .note-form {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    #note-input {
+        flex-grow: 1;
+        padding: 5px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+    }
+    
+    li {
+        display: inline-block;
+        margin-right: 50px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 70px;
+    background: #5540bc;
+    border-radius: 5px;
+    }
+    
+    li button {
+        margin-right: auto; 
+    padding: 5px;
+    background: #ff3333; 
+    color: white; 
+    cursor: pointer;
+    justify-content:flex-end;
+    align-items: end;
+    display: flex;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Note</h1>
+        <div class="note-form">
+            <input type="text" id="note-input" placeholder="Ghi chú của bạn">
+            <button onclick="addnote()">thêm </button>
+        </div>
+        
+    </div>
+    <div>
+        <ul id="note-list">
+            <li>
+            </li>
+        </ul>
+    </div>
+    <script src="/dist/index.js"></script>
+</body>
+</html>
